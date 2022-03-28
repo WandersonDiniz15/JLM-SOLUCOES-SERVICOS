@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" >
+     <title>Cadastro</title>
+     <style>
+       .btn-salvar{
+           background: #1E80B0;
+    color: #ffff;
+}
+     </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+             
+              <div class="container-fluid">
+                
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                      
+                    </svg>
+                   <strong class="ml - 1">JLM</strong> 
+                  </a>
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  
+                  <span class="navbar-toggler-icon"></span>
+                
+              </button>
+                
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Finaceiro</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sair</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+      <br><br>
+      <h2>Cadastro de Equipamentos:</h2><br>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="patrimonio">Patrimônio</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <small id="erro-patrimonio" class="vermelho"></small>
+      
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="equipamento">Equipamento</label>
+            <select class="form-select" id="equipamento">
+              <option selected>...</option>
+              <option value="1">Notebook</option>
+              <option value="2">Monitor</option>
+              <option value="3">Teclado</option>
+              <option value="4">Mouse</option>
+            </select>
+          </div> 
+           <small id="erro-patrimonio" class="vermelho"></small>
+          
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="modelo">Modelo/Marca</label>
+            <select class="form-select" id="modelo">
+              <option selected>...</option>
+              <option value="1">Dell Inspirion 3501</option>
+              <option value="2">...</option>
+              <option value="3">...</option>
+            </select>
+          </div>
+          <small id="erro-modelo" class="vermelho"></small>
+      
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="serial">Serial</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <small id="erro-serial" class="vermelho"></small>
+      
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="unidade">Unidade</label>
+            <select class="form-select" id="unidade">
+              <option selected>...</option>
+              <option value="1">Sede</option>
+              <option value="2">Contrato Santa Inês</option>
+              <option value="3">Contrato Imperatriz</option>
+            </select>
+          </div>
+          <small id="erro-unidade" class="vermelho"></small>
+      
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="setor">Setor</label>
+            <select class="form-select" id="setor">
+              <option selected>...</option>
+              <option value="1">Recursos Humanos</option>
+              <option value="2">Financeiro</option>
+              <option value="3">Contabilidade</option>
+              <option value="4">Sesmt</option>
+              <option value="5">Prestação de Contas</option>
+              <option value="6">Qualidade</option>
+              <option value="7">Recepção</option>
+              <option value="8">Consultório</option>
+              <option value="9">Administração</option>
+            </select>
+          </div>
+          <small id="erro-setor" class="vermelho"></small>
+      
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="usuario">Usuário</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <small id="erro-usuario" class="vermelho"></small>
+          <button class="btn btn-salvar" onclick="validar()">
+              
+            Salvar
+              
+            </button>
+        
+
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+    </body>
+</html>
